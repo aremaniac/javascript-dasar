@@ -118,3 +118,5 @@ prompt
 
 //--------------------------------------------//
 /*Kita juga bisa mengetik function di console window di debug mode chrome */
+
+//--------------------------------------------//
