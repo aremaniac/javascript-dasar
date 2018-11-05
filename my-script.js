@@ -357,3 +357,72 @@ var koleksiBuku = [
 for(var i=0; i<koleksiBuku.length; i++){
   document.write("<br/>judul : " + koleksiBuku[i].title + ", " + "sudah dibaca? " + koleksiBuku[i].readingStatus);
 }
+
+//--------------------------------------------//
+/** Regular expression & Function Object */
+var regExp1 = new RegExp("news");
+
+// alternate syntax
+var regExp2 = /news/;
+
+var strtosearch = "This news is a category";
+
+var matchFound = regExp2.test(strtosearch);
+
+console.log("hasil pemeriksaan regExp2 : ", matchFound);
+
+// contoh lain
+/** FUNGSI REDIRECT KE MOBILE VERSION
+  memeriksa apakah url megnandung kata news*
+*/
+
+var str = window.location.href;
+var is_news = str.search(/news\//i);
+console.log(str + " /news\//i :" + is_news);
+
+//--------------------------------------------//
+/** Function Object */
+var functionAsObject = new Function("a", "b", "return a*b");
+var funct1 = functionAsObject(4, 5);
+console.log(funct1);
+
+var funct2 = function(a, b){
+  return a*b
+};
+
+console.log(funct2(4, 9));
+
+//--------------------------------------------//
+/** String */
+var negara = new String("This is Indonesia");
+console.log(negara);
+
+var nation = "This is Indonesia Republic";
+console.log(nation);
+
+// special char
+console.log("I like \"vanila\" ice cream");
+console.log("I like \\vanila\\ ice cream");
+
+var myFavFood = "I like vanila ice cream";
+
+// string length
+console.log("words : "+ myFavFood +" length is : ", myFavFood.length);
+
+// index of
+console.log(myFavFood.indexOf("ice"));
+
+// sub string
+console.log(myFavFood.substring(14, 17));
+
+// sub replace
+console.log(myFavFood.replace("vanila", "choco"));
+
+// uppercase
+console.log(myFavFood.toUpperCase());
+
+// lowercase
+console.log(myFavFood.toLowerCase());
+
+// char at
+console.log(myFavFood.charAt(4));
