@@ -426,3 +426,18 @@ console.log(myFavFood.toLowerCase());
 
 // char at
 console.log(myFavFood.charAt(4));
+
+// check is a Number
+var angka = 20 + "a";
+console.log(angka.valueOf() );
+console.log(angka +" is not a number : " + isNaN(angka) );
+
+//--------------------------------------------//
+/** null and undefined */
+var c ;
+console.log(c);
+console.log(typeof(c)); // undefined is an undefined data type
+
+var minul = null ;
+console.log(minul);
+console.log(typeof(minul)); // null is an object data type
